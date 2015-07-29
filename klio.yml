@@ -1,0 +1,11 @@
+---
+
+- hosts: klio
+  sudo: true
+  gather_facts: true
+
+  vars:
+
+  roles:
+    - common
+    - maintenance
