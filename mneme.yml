@@ -8,7 +8,12 @@
 
   roles:
     - common
-    - maintenance
+    - { role: maintenance,
+        maintenance: {
+          upgrade_type: "full",
+          allow_reboot: true
+        }
+      }
     - trac
     - redmine
     - gitlab

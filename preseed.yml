@@ -1,0 +1,23 @@
+---
+
+- hosts: all
+  sudo: true
+  gather_facts: true
+
+  tasks:
+
+    - name: Ensure User "ansible" exists
+      user:
+        name=ansible
+        comment="Ansible User for Provisioning with Ansible"
+        state=present
+        #uid=99
+        shell=/bin/bash
+        groups=sudo,
+        system=yes
+
+    - name: Ensure that admin can login via SSH Public Key
+      authorized_key: 
+        user=ansible
+        key="{{ lookup('file', '~/.ssh/id_rsa.pub')}}"
+        state=present

@@ -1,8 +1,10 @@
 ---
 
 - hosts: all
-  sudo: true
+  become: true
   gather_facts: true
 
   roles:
-    - maintenance
+    - loechel.ansible_role.maintenance
+
+...
