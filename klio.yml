@@ -7,11 +7,10 @@
   vars:
 
   roles:
-    - common
-    - { role: maintenance,
+    - loechel.ansible_role.base
+    - { role: loechel.ansible_role.maintenance,
         maintenance: {
           upgrade_type: "full",
           allow_reboot: true
         }
       }
-

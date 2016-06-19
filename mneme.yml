@@ -7,13 +7,13 @@
   vars:
 
   roles:
-    - common
-    - { role: maintenance,
+    - loechel.ansible_role.base
+    - { role: loechel.ansible_role.maintenance,
         maintenance: {
           upgrade_type: "full",
           allow_reboot: true
         }
       }
-    - trac
-    - redmine
-    - gitlab
+    - loechel.ansible_role.trac
+    - loechel.ansible_role.redmine
+    - loechel.ansible_role.gitlab
