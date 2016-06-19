@@ -1,0 +1,15 @@
+[submodule "loechel.ansible_role.base"]
+	path = loechel.ansible_role.base
+	url = git@github.com:loechel/loechel.ansible_role.base.git
+[submodule "loechel.ansible_role.gitlab"]
+	path = loechel.ansible_role.gitlab
+	url = git@github.com:loechel/loechel.ansible_role.gitlab.git
+[submodule "loechel.ansible_role.maintenance"]
+	path = loechel.ansible_role.maintenance
+	url = git@github.com:loechel/loechel.ansible_role.maintenance.git
+[submodule "loechel.ansible_role.redmine"]
+	path = loechel.ansible_role.redmine
+	url = git@github.com:loechel/loechel.ansible_role.redmine.git
+[submodule "loechel.ansible_role.trac"]
+	path = loechel.ansible_role.trac
+	url = git@github.com:loechel/loechel.ansible_role.trac.git
